@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbar-supported-content">
+        <%= link_to " Wikinimous",  articles_path, style:'color:black;'%>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-supported-content">
+        <%= link_to " New Article", new_article_path,style:'color:black;'%>
+      </div>
+    <!--  <a class="nav-link" href=<%articles_path%>>Wikinimous <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href=<%new_article_path%>>New Article <span class="sr-only">(current)</span></a> -->
+    </nav>
     <%= yield %>
   </body>
 </html>
